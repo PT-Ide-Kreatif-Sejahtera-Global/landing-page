@@ -1,13 +1,15 @@
 'use client'
+import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
+
 
 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [header, setHeader] = useState(false);
-  const [isHomePage, setIsHomePage] = useState(true);
   const pathname = usePathname(); 
 
   interface MenuItem {
@@ -17,9 +19,10 @@ const Navbar = () => {
   }
 
   const menuItems: MenuItem[] = [
-    { name: "Beranda", href: "/" },
-    { name: "Pelayanan", href: "/pelayanan" },
-    { name: "FAQ", href: "/faq" },
+    { name: "Education", href: "/#" },
+    { name: "Product", href: "/#" },
+    { name: "Blog", href: "/#" },
+    { name: "About Us", href: "/#" },
   ];
 
     const handleMenuClick = (href: string, external?: boolean) => {
@@ -40,8 +43,6 @@ const Navbar = () => {
       };
     
       useEffect(() => {
-        setIsHomePage(pathname === "/"); 
-    
         const handleScroll = () => {
           scrollHeader();
         };
@@ -53,13 +54,81 @@ const Navbar = () => {
       }, [pathname]);
   return (
    <nav
-   className={`fixed w-full z-50 transition-all duration-300 ${
-    (header || isOpen || !isHomePage) ? "bg-white shadow-md" : "bg-white"
-  }`}
+   className={
+    header
+      ? "transition-all bg-white lg:shadow-md z-50 lg:fixed w-full top-0 start-0"
+      : "bg-transparent"
+  }
    >
-    <div className='p-6 flex justify-between'>
-        Navbar
-    </div>
+    <div className="container max-w-screen-2xl mx-auto flex justify-between items-center h-[108px] px-4 md:px-20 py-8">
+        <a href="/" className="flex items-center">
+          <Image width={50} height={50} className="w-[50px] h-[50px] rounded-full" src="/logoideathings.png" alt="Logo" />
+          <div className="flex flex-col ml-3">
+            <div className="text-black text-2xl font-bold">iDeaThings</div>
+          </div>
+        </a>
+        <div className="hidden lg:flex space-x-4">
+          {menuItems.map((item, index) => (
+            <div key={index} className="relative group">
+              <button
+                onClick={() => handleMenuClick(item.href)}
+                className="px-3 py-2.5 flex justify-center items-center gap-1.5 text-[#2e2751] text-lg font-semibold "
+              >
+                {item.name}
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className="lg:hidden flex items-center">
+          <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      {/* Sidebar */}
+      <div
+        className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } transition-transform duration-300 ease-in-out z-50`}
+      >
+        <div className="flex flex-col space-y-2 p-4">
+          <Link href="/">
+           <Image src="/images/logo.png" alt="logo" width={60} height={60} className="mb-4"/>
+          </Link>
+          {menuItems.map((item, index) => (
+            <div key={index} className="py-2">
+              <button
+                onClick={() => {
+                    handleMenuClick(item.href);
+                }}
+                className="block text-left w-full text-[#2e2751] text-lg font-medium"
+              >
+                {item.name}
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Overlay */}
+      {isOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={() => setIsOpen(false)}
+        ></div>
+      )}
    </nav>
   )
 }
