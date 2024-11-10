@@ -72,7 +72,7 @@ const Navbar = () => {
             <div key={index} className="relative group">
               <button
                 onClick={() => handleMenuClick(item.href)}
-                className="px-3 py-2.5 flex justify-center items-center gap-1.5 text-[#2e2751] text-lg font-semibold "
+                className="px-3 py-2.5 flex justify-center items-center gap-1.5 text-black text-lg font-semibold hover:text-[#3d3d3d]"
               >
                 {item.name}
               </button>
