@@ -24,8 +24,8 @@ const FOOTERCONTACT = [
 
 const Footer = () => {
   return (
-    <div className='px-4 nd:px-20 bg-footer '>
-        <div className='grid grid-cols-3'>
+    <div className='px-4 md:px-20 bg-footer '>
+        <div className='grid grid-cols-1 md:grid-cols-3 py-24 gap-5'>
             <div className='flex flex-col gap-3 justify-center'>
                 <div className='flex  items-center gap-3 text-white'>
                     <Image width={50} height={50} className="w-[50px] h-[50px] rounded-full" src="/logoideathings.png" alt="Logo" /> 
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
             </div>
 
-             <div className='text-white flex flex-col gap-2 justify-center items-center'>
+             <div className='text-white flex flex-col gap-2 justify-center items-start md:items-center'>
                  <h1 className='font-bold'>Our Services</h1>
                  <ul className='flex flex-col gap-1'>
                      <li>Education</li>
@@ -46,7 +46,7 @@ const Footer = () => {
                      <li>Digital Talent</li>
                  </ul>
              </div>
-            <div className='gap-2 flex flex-col justify-center items-center'>
+            <div className='gap-2 flex flex-col  justify-center items-start md:items-center'>
               <h1 className='font-bold text-white'>Contact Us</h1>
                 {FOOTERCONTACT.map((item, i) => (
                   <ul key={i} className='text-white flex items-center gap-3'>
@@ -57,6 +57,10 @@ const Footer = () => {
                  
             </div>
             
+        </div>
+        
+        <div className='text-center text-white '>
+              <p>© Copyright 2023 – PT.Ide Kreatif Sejahtera Global</p>
         </div>
     </div>
   )
