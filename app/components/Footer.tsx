@@ -21,6 +21,19 @@ const FOOTERCONTACT = [
 
 ]
 
+const FOOTERSERVICE = [
+  {
+    title:"Education"
+  },
+  {
+    title:"Product"
+  },
+  {
+    title:"Digital Talent"
+  }
+
+]
+
 
 const Footer = () => {
   return (
@@ -40,11 +53,15 @@ const Footer = () => {
 
              <div className='text-white flex flex-col gap-2 justify-center items-start md:items-center'>
                  <h1 className='font-bold'>Our Services</h1>
-                 <ul className='flex flex-col gap-1'>
-                     <li>Education</li>
-                     <li>Product</li>
-                     <li>Digital Talent</li>
+
+                 <ul className='flex flex-col gap-1 text-start'>
+                                  {FOOTERSERVICE.map((item, i) => (
+ 
+                     <li><a href="" className='cursor-pointer'>{item.title}</a></li>
+                        ))}
                  </ul>
+                              
+
              </div>
             <div className='gap-2 flex flex-col  justify-center items-start md:items-center'>
               <h1 className='font-bold text-white'>Contact Us</h1>
