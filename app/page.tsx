@@ -7,7 +7,7 @@ import ServiceSection from "./components/ServiceSection";
 export default function Home() {
   return (
    <>
-   <div className="container">
+   <div className="w-full">
       <HeroSection/>
       <EducationSection/>
       <MarketSection />
