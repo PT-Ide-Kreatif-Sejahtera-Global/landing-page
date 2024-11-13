@@ -27,7 +27,7 @@ const EducationSection = () => {
   return (
     <div className='px-4 lg:px-20  '>
         <div className='flex flex-col md:flex-row gap-5 lg:flex-row  items-center justify-between '>
-            <div className='flex flex-col text-center gap-3 md:text-start lg:text-start'>
+            <div className='flex flex-col text-center gap-1 md:text-start lg:text-start'>
                 <h1 className='text-xl lg:text-2xl font-bold '>
                   Program Education
                 </h1>

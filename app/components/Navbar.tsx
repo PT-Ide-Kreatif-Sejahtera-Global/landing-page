@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
@@ -62,7 +61,7 @@ const Navbar = () => {
    >
     <div className="container max-w-screen-2xl mx-auto flex justify-between items-center h-[108px] px-4 md:px-20 py-8">
         <a href="/" className="flex items-center">
-          <Image width={50} height={50} className="w-[50px] h-[50px] rounded-full" src="/logoideathings.png" alt="Logo" />
+          <img width={50} height={50} className="w-[50px] h-[50px] rounded-full" src="/logoideathings.png" alt="Logo" />
           <div className="flex flex-col ml-3">
             <div className="text-black text-2xl font-bold">iDeaThings</div>
           </div>
@@ -106,7 +105,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-2 p-4">
           <Link href="/">
-           <Image src="/images/logo.png" alt="logo" width={60} height={60} className="mb-4"/>
+           <img src="/logoideathings.png" alt="logo" width={60} height={60} className="mb-4"/>
           </Link>
           {menuItems.map((item, index) => (
             <div key={index} className="py-2">
