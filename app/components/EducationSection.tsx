@@ -22,10 +22,8 @@ const IMGITEM = [
 
 const EducationSection = () => {
 
-  
-
   return (
-    <div className='px-4 lg:px-20  '>
+    <div className='px-4 lg:px-28  '>
         <div className='flex flex-col md:flex-row gap-5 lg:flex-row  items-center justify-between '>
             <div className='flex flex-col text-center gap-3 md:text-start lg:text-start'>
                 <h1 className='text-xl lg:text-2xl font-bold '>
@@ -37,7 +35,7 @@ const EducationSection = () => {
             </div>
             <div>
                 <Link href={'/'} target='_blank'>
-                  <button className='flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg duration-300'>
+                  <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg duration-300'>
                     More
                   <PiArrowUpRightBold />
                   </button>
