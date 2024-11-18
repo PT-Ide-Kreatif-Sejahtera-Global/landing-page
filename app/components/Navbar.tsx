@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const menuItems: MenuItem[] = [
     { name: "Education", href: "/#" },
-    { name: "Product", href: "/#" },
+    { name: "Service", href: "/#" },
     { name: "Blog", href: "/#" },
     { name: "About Us", href: "/#" },
   ];
@@ -71,7 +71,7 @@ const Navbar = () => {
             <div key={index} className="relative group">
               <button
                 onClick={() => handleMenuClick(item.href)}
-                className="px-3 py-2.5 flex justify-center items-center gap-1.5 text-black text-lg font-semibold hover:text-[#3d3d3d]"
+                className="px-3 py-2.5 flex justify-center items-center border-b-2 border-b-transparent duration-150 hover:border-b-2 hover:border-b-lime-400 gap-1.5 text-black text-lg font-semibold hover:text-[#3d3d3d]"
               >
                 {item.name}
               </button>
