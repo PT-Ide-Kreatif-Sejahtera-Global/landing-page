@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        footer: "#14453D"
+        footer: "#14453D",
+        bran:"#9DF700"
       },
     },
   },
