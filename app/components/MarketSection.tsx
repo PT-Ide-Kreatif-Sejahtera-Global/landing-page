@@ -5,13 +5,15 @@ import Link from "next/link";
 
 const IMGITEM = [
   {
-    img: "/Education_Assets/card-1.png",
+    img: "/Marketplace_Assets/card-2.png",
+    title: "Celana Blue Jeans Wanita Casual dan Elegan ",
+    subtitle: "by Penjual",
   },
 ];
 
 const MarketSection = () => {
   return (
-    <div className="px-4 lg:px-20 py-10 bg-[#10352c] text-white">
+    <div className="mt-14 px-4 lg:px-28 py-10 bg-[#10352c] text-white">
       <div className="flex flex-col md:flex-row gap-5 items-center justify-between">
         {/* Text and Buttons Section */}
         <div className="flex flex-col text-center gap-3 md:text-start">
@@ -42,16 +44,19 @@ const MarketSection = () => {
         {/* Image Section */}
         <div className="relative w-80 h-80">
           {IMGITEM.map((item, i) => (
-            <div
-              key={i}
-              className="w-full h-full relative overflow-hidden rounded-lg"
-            >
-              <Image
-                src={item.img}
-                alt="Product Image"
-                layout="fill"
-                className="object-cover"
-              />
+            <div key={i} className="">
+              <div className="w-70 h-80 relative  overflow-hidden rounded-lg hover:scale-105 duration-300 group cursor-pointer  object-cover ">
+                <Image
+                  className="rounded-xl border-4 border-black opacity-40 group-hover:opacity-100 duration-300 "
+                  src={item.img}
+                  alt="Logo"
+                  fill
+                />
+                <div className="absolute bottom-0 w-full bg-gradient-to-t  from-black to-transparent px-3 translate-y-full py-4 group-hover:translate-y-0 duration-300">
+                  <p className=" text-white font-bold text-xl">{item.title}</p>
+                  <p className="text-sm text-white">{item.subtitle}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
