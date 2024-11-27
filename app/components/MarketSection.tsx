@@ -1,17 +1,77 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { PiArrowUpRightBold } from "react-icons/pi";
 import Image from "next/image";
 import Link from "next/link";
 
-const IMGITEM = [
+const IMGITEMS = [
+  {
+    img: "/Marketplace_Assets/card-1.png",
+    title: "Tas Sling Bag Pria INFCL TL 510 IFS",
+    subtitle: "Rp 49.768",
+  },
   {
     img: "/Marketplace_Assets/card-2.png",
-    title: "Celana Blue Jeans Wanita Casual dan Elegan ",
-    subtitle: "by Penjual",
+    title: "Celana Blue Jeans Wanita Casual dan Elegan",
+    subtitle: "Rp 216.000",
+  },
+  {
+    img: "/Marketplace_Assets/card-3.png",
+    title: "Jacket Wanita KSD KZR 515",
+    subtitle: "Rp 170.000",
+  },
+  {
+    img: "/Marketplace_Assets/card-4.png",
+    title: "Kemeja Casual Pria KKC KZR 116",
+    subtitle: "Rp 117.600",
+  },
+  {
+    img: "/Marketplace_Assets/card-5.png",
+    title: "knficlo Wanita Pakaian Atasan INF 637",
+    subtitle: "Rp 105.000",
+  },
+  {
+    img: "/Marketplace_Assets/card-6.png",
+    title: "Dompet Pria Simpel dan Elegan",
+    subtitle: "Rp 64.500",
+  },
+  {
+    img: "/Marketplace_Assets/card-7.png",
+    title: "Item 7",
+    subtitle: "Rp",
+  },
+  {
+    img: "/Marketplace_Assets/card-8.png",
+    title: "Item 8",
+    subtitle: "Rp",
+  },
+  {
+    img: "/Marketplace_Assets/card-9.png",
+    title: "Item 9",
+    subtitle: "Rp",
+  },
+  {
+    img: "/Marketplace_Assets/card-10.png",
+    title: "Item 10",
+    subtitle: "Rp",
   },
 ];
 
 const MarketSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? IMGITEMS.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === IMGITEMS.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <div className="mt-14 px-4 lg:px-28 py-10 bg-[#10352c] text-white">
       <div className="flex flex-col md:flex-row gap-5 items-center justify-between">
@@ -41,24 +101,41 @@ const MarketSection = () => {
           </div>
         </div>
 
-        {/* Image Section */}
+        {/* Carousel Section */}
         <div className="relative w-80 h-80">
-          {IMGITEM.map((item, i) => (
-            <div key={i} className="">
-              <div className="w-70 h-80 relative  overflow-hidden rounded-lg hover:scale-105 duration-300 group cursor-pointer  object-cover ">
-                <Image
-                  className="rounded-xl border-4 border-black opacity-40 group-hover:opacity-100 duration-300 "
-                  src={item.img}
-                  alt="Logo"
-                  fill
-                />
-                <div className="absolute bottom-0 w-full bg-gradient-to-t  from-black to-transparent px-3 translate-y-full py-4 group-hover:translate-y-0 duration-300">
-                  <p className=" text-white font-bold text-xl">{item.title}</p>
-                  <p className="text-sm text-white">{item.subtitle}</p>
-                </div>
-              </div>
+          {/* Previous Button */}
+          <button
+            onClick={handlePrev}
+            className="absolute top-1/2 -left-8 transform -translate-y-1/2 bg-yellow-400 text-black p-2 rounded-full hover:bg-yellow-500 transition"
+          >
+            &#8249;
+          </button>
+
+          {/* Image Display */}
+          <div className="relative w-full h-full overflow-hidden rounded-lg">
+            <Image
+              src={IMGITEMS[currentIndex].img}
+              alt={IMGITEMS[currentIndex].title}
+              className="rounded-xl border-4 border-black opacity-90 hover:opacity-100 duration-300"
+              fill
+            />
+            <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent px-3 py-4">
+              <p className="text-white font-bold text-lg">
+                {IMGITEMS[currentIndex].title}
+              </p>
+              <p className="text-sm text-gray-300">
+                {IMGITEMS[currentIndex].subtitle}
+              </p>
             </div>
-          ))}
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={handleNext}
+            className="absolute top-1/2 -right-8 transform -translate-y-1/2 bg-yellow-400 text-black p-2 rounded-full hover:bg-yellow-500 transition"
+          >
+            &#8250;
+          </button>
         </div>
       </div>
     </div>
