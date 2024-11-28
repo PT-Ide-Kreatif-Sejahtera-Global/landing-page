@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 const IMGITEM = [
   {
-    img:'/Education_Assets/parenting_course.jpg',
+    img:'/Education_Assets/parenting_course.webp',
     title:'Belajar Parenting',
-    subtitle:'by Seigi Okta'
+    subtitle:'Seigi Okta'
   },
   {
     img:'/Education_Assets/card-1.png'
@@ -54,11 +54,20 @@ const EducationSection = () => {
                       </div>
                   </div> */}
 
-                  <div className='w-64 h-80 relative overflow-hidden  object-cover '>
+                  <div className='w-80 h-96 relative overflow-hidden  object-cover '>
                       <img className=''  src={item.img} alt="Logo"       />
-                      <div className='absolute bottom-0 w-full bg-red-500 h-36'>
-                          <p className=' text-white font-bold text-xl'>{item.title}</p>
-                          <p className='text-sm text-white'>{item.subtitle}</p>
+                      <div className='absolute top-0  text-white w-full '>
+                          <div className='p-3 flex flex-col gap-2'>
+                            <p className='font-bold text-xl'>{item.title}</p>
+                            <p className='text-sm'>{item.subtitle}</p>
+                            {/* <div className='border border-white'></div> */}
+                          </div>
+                      </div>
+                      <div className='absolute bottom-0 w-full bg-lime-100 h-40'>
+                          <div className='p-3 '>
+                            <p className='font-bold text-xl'></p>
+                            <p className='text-sm '></p>
+                          </div>
                       </div>
                   </div>
               </div>
