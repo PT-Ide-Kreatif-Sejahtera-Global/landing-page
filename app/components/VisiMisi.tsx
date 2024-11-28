@@ -7,7 +7,7 @@ const VisiMisi = () => {
         <div>
           <span className="font-bold">VISI</span> <br />
           <hr />
-          <p>
+          <p className="text-justify">
             Menjadikan iDeaThings sebagai perusahaan sociopreneur yang
             menciptakan lingkungan inklusif bagi seluruh lapisan masyarakat.
             Kami berkomitmen untuk menyediakan peluang kerja bagi kaum difabel
@@ -18,7 +18,7 @@ const VisiMisi = () => {
           <br />
           <span className="font-bold">MISI</span> <br />
           <hr />
-          <p>
+          <p className="text-justify">
             iDeaThings menghadirkan peluang kerja bagi kaum marjinal, terutama
             mereka yang kurang memiliki akses pendidikan, sebagai langkah nyata
             untuk menciptakan perubahan sosial. Kami bertekad untuk memperluas
@@ -29,7 +29,7 @@ const VisiMisi = () => {
         </div>
         <div></div>
       </div>
-      <div className="basis-1/2 text-7xl flex items-center bg-[#e6fa9c] p-12 font-semibold">
+      <div className="basis-1/2 text-7xl flex items-center bg-lime-400 hover:text-[80px] transition-all p-12 font-semibold">
         Vision and Mision
       </div>
     </div>

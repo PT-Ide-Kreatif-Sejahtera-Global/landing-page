@@ -15,7 +15,7 @@ const HeroSection = () => {
             <div className='text-6xl font-bold w-[500px]'>Grow your unique
             talent with us !</div>
             <div>Improve your skill to build your personal branding.</div>
-            <button className='px-[20px] py-[10px] bg-[#9ece14] hover:bg-[#9cdd2c] text-[16px] font-bold rounded-xl w-[120px]'>Join Now</button>
+            <button className='py-[10px] bg-lime-400 hover:bg-[#9cdd2c] text-[20px] font-bold rounded-xl w-[150px] '>Join Now</button>
           </div>
           <div>
             <img src="/hero/hero1.png" alt="band" className='h-[500px]' />
