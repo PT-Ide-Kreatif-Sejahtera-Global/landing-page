@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const menuItems: MenuItem[] = [
     { name: "Education", href: "/#" },
-    { name: "Service", href: "/#" },
+    { name: "Marketplace", href: "/#" },
     { name: "Blog", href: "/#" },
     { name: "About Us", href: "/#" },
   ];
