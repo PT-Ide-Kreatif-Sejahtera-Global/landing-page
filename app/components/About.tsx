@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container max-w-screen-2xl mx-auto px-20">
-      <div className="flex flex-row">
-        <div className="basis-1/2 flex items-center bg-lime-400 p-12 font-semibold text-7xl hover:text-[80px] transition-all">
+    <div className="container max-w-screen-2xl mx-auto xl:px-20">
+      <div className="flex flex-col xl:flex-row">
+        <div className="basis-1/2 flex items-center bg-lime-400 p-12 font-semibold text-5xl xl:text-7xl xl:hover:text-[80px] transition-all">
           What is iDeaThings ?
         </div>
         <div className="basis-1/2 p-12 flex items-center bg-slate-50">
