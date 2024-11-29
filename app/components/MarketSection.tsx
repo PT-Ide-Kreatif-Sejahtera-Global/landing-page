@@ -112,21 +112,30 @@ const MarketSection = () => {
           </button>
 
           {/* Image Display */}
-          <div className="relative w-full h-full overflow-hidden rounded-lg">
-            <Image
-              src={IMGITEMS[currentIndex].img}
-              alt={IMGITEMS[currentIndex].title}
-              className="rounded-xl border-4 border-black opacity-90 hover:opacity-100 duration-300"
-              fill
-            />
-            <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent px-3 py-4">
-              <p className="text-white font-bold text-lg">
-                {IMGITEMS[currentIndex].title}
-              </p>
-              <p className="text-sm text-gray-300">
-                {IMGITEMS[currentIndex].subtitle}
-              </p>
-            </div>
+          <div className="relative w-full h-full overflow-hidden rounded-lg group">
+            {/* Gambar sebagai tombol */}
+            <button
+              onClick={() => console.log(IMGITEMS[currentIndex].title)}
+              className="relative w-full h-full rounded-xl border-4 border-black overflow-hidden focus:outline-none group"
+            >
+              {/* Gambar */}
+              <Image
+                src={IMGITEMS[currentIndex].img}
+                alt={IMGITEMS[currentIndex].title}
+                className="rounded-xl opacity-90 group-hover:opacity-100 transform group-hover:scale-105 duration-300"
+                fill
+              />
+
+              {/* Teks */}
+              <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent px-3 py-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white font-bold text-lg">
+                  {IMGITEMS[currentIndex].title}
+                </p>
+                <p className="text-sm text-gray-300">
+                  {IMGITEMS[currentIndex].subtitle}
+                </p>
+              </div>
+            </button>
           </div>
 
           {/* Next Button */}
