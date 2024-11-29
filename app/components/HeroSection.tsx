@@ -10,7 +10,7 @@ const HeroSection = () => {
           <img src="/hero/wave.png" alt="wave-background" className="top-10" />
         </div>
         <div className="absolute inset-0 z-10 px-5 xl:px-20 py-10">
-          <div className="flex flex-col xl:flex-row gap-5 justify-evenly">
+          <div className="flex flex-col xl:flex-row gap-5 justify-between">
             <div className="flex flex-col justify-center items-center xl:items-start gap-6 xl:gap-4">
               <div className="text-5xl text-center xl:text-start xl:text-6xl font-bold xl:w-[500px]">
                 Grow your unique talent with us !
