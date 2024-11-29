@@ -2,7 +2,7 @@ import React from "react";
 
 const VisiMisi = () => {
   return (
-    <div className="container max-w-screen-2xl mx-auto px-20 flex flex-row ">
+    <div className="container max-w-screen-2xl mx-auto xl:px-20 flex flex-col xl:flex-row ">
       <div className="basis-1/2 flex flex-col text-[18px] bg-slate-50 p-12">
         <div>
           <span className="font-bold">VISI</span> <br />
@@ -29,7 +29,7 @@ const VisiMisi = () => {
         </div>
         <div></div>
       </div>
-      <div className="basis-1/2 text-7xl flex items-center bg-lime-400 hover:text-[80px] transition-all p-12 font-semibold">
+      <div className="basis-1/2 text-5xl xl:text-7xl order-first xl:order-last flex items-center bg-lime-400 xl:hover:text-[80px] transition-all p-12 font-semibold">
         Vision and Mision
       </div>
     </div>

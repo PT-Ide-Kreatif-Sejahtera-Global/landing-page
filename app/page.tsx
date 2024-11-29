@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col gap-8 justify-items-center">
+      <div className="flex flex-col gap-10 justify-items-center">
         <HeroSection />
         <About />
         <VisiMisi />

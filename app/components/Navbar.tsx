@@ -105,7 +105,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-2 p-4">
           <Link href="/">
-           <img src="/logoideathings.png" alt="logo" width={60} height={60} className="mb-4"/>
+           <img src="/logoideathings.png" alt="logo" width={60} height={60} className="mb-4 rounded-full"/>
           </Link>
           {menuItems.map((item, index) => (
             <div key={index} className="py-2">
