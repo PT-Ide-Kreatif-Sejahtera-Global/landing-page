@@ -4,7 +4,7 @@ import About from "./components/About";
 import EducationSection from "./components/EducationSection";
 import HeroSection from "./components/HeroSection";
 import MarketSection from "./components/MarketSection";
-import ServiceSection from "./components/ServiceSection";
+import ServiceSection from "./components/BlogSection";
 import VisiMisi from "./components/VisiMisi";
 
 export default function Home() {
