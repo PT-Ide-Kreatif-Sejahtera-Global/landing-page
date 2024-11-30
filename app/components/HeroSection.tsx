@@ -1,8 +1,12 @@
+import { useRouter } from "next/navigation";
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 const HeroSection = () => {
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push('https://ideathings.id//education'); 
+  };
   return (
     <div className="max-h-screen-hpkecil lg:h-full mt-10 xl:mt-0">
       <div className="relative z-0 self-stretch w-full">
@@ -16,7 +20,7 @@ const HeroSection = () => {
                 Grow your unique talent with us !
               </div>
               <div className="text-center xl:text-start ">Improve your skill to build your personal branding.</div>
-              <button className="py-[10px] bg-lime-400 hover:bg-[#9cdd2c] text-[20px] font-bold rounded-xl w-[150px] ">
+              <button onClick={handleNavigation} className="py-[10px] bg-lime-400 hover:bg-[#9cdd2c] text-[20px] font-bold rounded-xl w-[150px] ">
                 Join Now
               </button>
             </div>
