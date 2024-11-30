@@ -9,23 +9,23 @@ import { FaCheck } from "react-icons/fa";
 
 const IMGITEM = [
   {
-    img:'/Education_Assets/parenting_course.webp',
-    title:'Belajar Parenting',
-    subtitle:'Seigi Okta',
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    img:'/Education_Assets/designer_course.webp',
+    title:'Canva untuk UMK ramah disabilitas Daksa, Low-Vision, Disabilitas Rungu, dan Autistik',
+    text:"Temukan cara mudah mendesain dengan Canva yang inklusif dan ramah disabilitas",
+    text2:"Jadikan bisnis UMK Anda lebih profesional dan menarik perhatian pelanggan"
   },
   {
-    img:'/Education_Assets/card-1.png',
-    title:'Belajar Parenting',
-    subtitle:'Seigi Okta',
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    img:'/Education_Assets/editor_course.webp',
+    title:'Capcut untuk UMKM versi Masyarakat Umum',
+    text:"Edit video bisnis Anda dengan mudah menggunakan Capcut",
+    text2:"Tingkatkan daya tarik UMKM Anda dengan konten visual yang kreatif dan memukau"
 
   },
   {
-    img:'/Education_Assets/card-1.png',
-    title:'Belajar Parenting',
-    subtitle:'Seigi Okta',
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+    img:'/Education_Assets/fasion_course.webp',
+    title:'Menjadi Fashion Desainer untuk UMKM Ramah Pemula',
+    text:"Pelajari langkah awal menjadi fashion desainer untuk UMKM, mulai dari nol",
+    text2:"Kembangkan kreativitas Anda dan buat produk UMKM yang unik dan stylish"
 
   },
   
@@ -65,16 +65,15 @@ const EducationSection = () => {
                       </div>
                   </div> */}
 
-                  <div className='border-2 border-black w-80 h-96  group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
+                  <div className='border-4 border-black w-80 h-96  group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
                       <img className='relative group-hover:scale-105 duration-300 group-hover:blur-md'  src={item.img} alt="Logo"       />
-                      <div className='absolute top-0  text-white w-full '>
+                      <div className='absolute top-0   text-white  w-full '>
                           <div className='p-3 flex flex-col gap-2'>
-                            <p className='font-bold text-xl'>{item.title}</p>
-                            <p className='text-sm'>{item.subtitle}</p>
+                            <p className='font-bold text-xl drop-shadow-md'>{item.title}</p>
                             {/* <div className='border border-white'></div> */}
                           </div>
                       </div>
-                      <div className='flex flex-col  gap-6 absolute bottom-0 w-full bg- h-40'>
+                      <div className='flex flex-col  gap-6 absolute bottom-0 w-fullh-40 bg-gradient-to-t  from-black to-transparent   translate-y-full py-4 group-hover:translate-y-0 duration-300'>
                           <div className='p-3'>
                               <div className='flex flex-col gap-3'>
                                   <div className='flex gap-3'>
@@ -83,12 +82,12 @@ const EducationSection = () => {
                                   </div>
                                   <div className='flex gap-3'>
                                       <FaCheck  className='text-white'/>
-                                      <p className='text-xs text-white'>{item.text}</p>
+                                      <p className='text-xs text-white'>{item.text2}</p>
                                   </div>
                               </div>
                             <p className='text-sm '></p>
 
-                            <a href="https://ideathings.id/education" className='group-hover:bg-white duration-300 border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
+                            <a href="https://ideathings.id/education" className='border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
                           </div>
                       </div>
                   </div>
