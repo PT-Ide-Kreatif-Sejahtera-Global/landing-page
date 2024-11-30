@@ -65,7 +65,7 @@ const EducationSection = () => {
                       </div>
                   </div> */}
 
-                  <div className='border-2 border-black w-80 h-96 opacity-30 group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
+                  <div className='border-2 border-black w-80 h-96  group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
                       <img className='relative group-hover:scale-105 duration-300 group-hover:blur-md'  src={item.img} alt="Logo"       />
                       <div className='absolute top-0  text-white w-full '>
                           <div className='p-3 flex flex-col gap-2'>
@@ -88,7 +88,7 @@ const EducationSection = () => {
                               </div>
                             <p className='text-sm '></p>
 
-                            <a href="http://" className='group-hover:bg-white duration-300 border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
+                            <a href="https://ideathings.id/education" className='group-hover:bg-white duration-300 border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
                           </div>
                       </div>
                   </div>

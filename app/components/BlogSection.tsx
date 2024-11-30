@@ -59,7 +59,7 @@ const ServiceSection = () => {
                     <Image
                       src={item.img}
                       alt={item.title}
-                      className="rounded-lg border-black opacity-100 hover:opacity-100 duration-300"
+                      className="rounded-lg h- border-black opacity-100 hover:opacity-100 duration-300"
                       fill
                     />
                     <div className="absolute bottom-0 w-full bg-gradient-to-t opacity-100 group-hover:opacity-0 rounded-t-lg from-black to-transparent px-3 py-4">
