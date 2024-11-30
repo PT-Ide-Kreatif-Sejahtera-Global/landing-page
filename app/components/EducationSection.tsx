@@ -2,6 +2,8 @@ import React from 'react'
 import { PiArrowUpRightBold } from "react-icons/pi";
 import Image from 'next/image';
 import Link from 'next/link';
+import { Content } from 'next/font/google';
+import { FaCheck } from "react-icons/fa";
 
 
 
@@ -9,13 +11,22 @@ const IMGITEM = [
   {
     img:'/Education_Assets/parenting_course.webp',
     title:'Belajar Parenting',
-    subtitle:'Seigi Okta'
+    subtitle:'Seigi Okta',
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
   },
   {
-    img:'/Education_Assets/card-1.png'
+    img:'/Education_Assets/card-1.png',
+    title:'Belajar Parenting',
+    subtitle:'Seigi Okta',
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+
   },
   {
-    img:'/Education_Assets/card-1.png'
+    img:'/Education_Assets/card-1.png',
+    title:'Belajar Parenting',
+    subtitle:'Seigi Okta',
+    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+
   },
   
 ]
@@ -54,8 +65,8 @@ const EducationSection = () => {
                       </div>
                   </div> */}
 
-                  <div className='w-80 h-96 relative overflow-hidden  object-cover '>
-                      <img className=''  src={item.img} alt="Logo"       />
+                  <div className='border-2 border-black w-80 h-96 opacity-30 group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
+                      <img className='relative group-hover:scale-105 duration-300 group-hover:blur-md'  src={item.img} alt="Logo"       />
                       <div className='absolute top-0  text-white w-full '>
                           <div className='p-3 flex flex-col gap-2'>
                             <p className='font-bold text-xl'>{item.title}</p>
@@ -63,10 +74,21 @@ const EducationSection = () => {
                             {/* <div className='border border-white'></div> */}
                           </div>
                       </div>
-                      <div className='absolute bottom-0 w-full bg-lime-100 h-40'>
-                          <div className='p-3 '>
-                            <p className='font-bold text-xl'></p>
+                      <div className='flex flex-col  gap-6 absolute bottom-0 w-full bg- h-40'>
+                          <div className='p-3'>
+                              <div className='flex flex-col gap-3'>
+                                  <div className='flex gap-3'>
+                                      <FaCheck  className='text-white'/>
+                                      <p className='text-xs text-white'>{item.text}</p>
+                                  </div>
+                                  <div className='flex gap-3'>
+                                      <FaCheck  className='text-white'/>
+                                      <p className='text-xs text-white'>{item.text}</p>
+                                  </div>
+                              </div>
                             <p className='text-sm '></p>
+
+                            <a href="http://" className='group-hover:bg-white duration-300 border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
                           </div>
                       </div>
                   </div>
