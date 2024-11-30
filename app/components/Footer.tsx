@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 
 
@@ -18,6 +19,11 @@ const FOOTERSERVICE = [
     title: "Digital Talent",
   },
 ];
+
+// const router = useRouter()
+// // const handleNavigation = () => {
+// //   // router.push('')
+// // }
 
 const Footer = () => {
   return (
@@ -37,8 +43,12 @@ const Footer = () => {
           <div className="text-white flex flex-col">
             <h1 className="font-bold">PT.Ide Kreatif Sejahtera Global</h1>
             <p className="text-sm">
-              PT. Ide Kreatif Sejahtera Global adalah perusahaan sosial yang di
-              bidang jasa dan lorem ipsum dolor si amet
+              PT. Ide Kreatif Sejahtera Global adalah perusahaan adalah sociopreneur yang berkomitmen untuk
+            menciptakan inklusi sosial dengan memberdayakan sumber daya manusia
+            melalui berbagai bidang usaha yang telah berbadan hukum sebagai PT (Perseoran Terbatas).
+            Saat ini, kami mengembangkan empat sektor utama: pendidikan,
+            e-commerce, jasa kreatif, dan teknologi informasi, dengan
+            menghadirkan brand unggulan
             </p>
           </div>
         </div>
