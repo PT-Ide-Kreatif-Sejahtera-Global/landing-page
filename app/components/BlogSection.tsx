@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const text = [
   {
@@ -26,6 +27,12 @@ const text = [
 
 
 const ServiceSection = () => {
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push('/'); // Ganti '/target-page' dengan rute yang diinginkan
+  };
+
   return (
     <div className='px-4 lg:px-20 mt-20 mb-20  items-center'>
       <div className='col flex-col md:flex-row gap-5 lg:flex-row m-auto w-full text-center items-center justify-between '>
@@ -52,7 +59,7 @@ const ServiceSection = () => {
                     <Image
                       src={item.img}
                       alt={item.title}
-                      className="rounded-lg border-black opacity-100 hover:opacity-100 duration-300"
+                      className="rounded-lg h- border-black opacity-100 hover:opacity-100 duration-300"
                       fill
                     />
                     <div className="absolute bottom-0 w-full bg-gradient-to-t opacity-100 group-hover:opacity-0 rounded-t-lg from-black to-transparent px-3 py-4">
@@ -65,11 +72,10 @@ const ServiceSection = () => {
                   <div className='absolute mt-4 -z-10 top-0 w-full group-hover:bg-gradient-to-t bg-transparent from-gray-50 to-transparent px-3 translate-y-0 py-4 group-hover:translate-y-40 duration-300'>
                     <p className=' text-black font-bold text-xl mb-2'>{item.title}</p>
                     <p className='text-sm text-black mb-2'>{item.desc}</p>
-                    <Link href="/" passHref>
-                      <button className="bg-lime-400 text-black w-full font-bold px-6 py-2 rounded-md hover:bg-[#9cdd2c] transition duration-300">
+                      <button onClick={handleNavigation} className="bg-lime-400 text-black w-full font-bold px-6 py-2 rounded-md hover:bg-[#9cdd2c] transition duration-300">
                       <span className="opacity-0 group-hover:opacity-100">MORE</span>
                       </button>
-                    </Link>
+                    
                   </div>
                 </div>
               </Link>

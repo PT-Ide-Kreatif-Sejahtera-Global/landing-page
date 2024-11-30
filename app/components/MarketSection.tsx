@@ -87,12 +87,12 @@ const MarketSection = () => {
             lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
           <div className="flex gap-3 mt-4">
-            <Link href="/" passHref>
+            <Link href="https://ideathings.id/marketplace" passHref>
               <button className="bg-yellow-400 text-black font-bold px-6 py-2 rounded-md hover:bg-yellow-500 transition duration-300">
                 MORE
               </button>
             </Link>
-            <Link href="/" passHref>
+            <Link href="https://ideathings.id/marketplace" passHref>
               <button className="flex items-center gap-2 border-2 border-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">
                 GET IN TOUCH
                 <PiArrowUpRightBold className="text-xl" />
