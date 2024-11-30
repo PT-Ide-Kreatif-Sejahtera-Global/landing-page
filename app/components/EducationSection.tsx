@@ -45,7 +45,7 @@ const EducationSection = () => {
                 </p>
             </div>
             <div>
-                <a href="http://">
+                <a href="https://ideathings.id/education" target='_blank'>
                   <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg duration-300'>
                     More
                   <PiArrowUpRightBold />
@@ -87,7 +87,7 @@ const EducationSection = () => {
                               </div>
                             <p className='text-sm '></p>
 
-                            <a href="https://ideathings.id/education" className='border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
+                            <a href="https://ideathings.id/education" target='_blank' className='border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
                           </div>
                       </div>
                   </div>
