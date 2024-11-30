@@ -38,8 +38,8 @@ const ServiceSection = () => {
   return (
     <div className='px-4 lg:px-20 mt-20 mb-20 items-center'>
       <div className='col flex-col md:flex-row gap-5 lg:flex-row m-auto w-full text-center items-center justify-between'>
-        <div className='flex flex-col text-center gap-3 md:text-start lg:text-center'>
-          <h1 className='text-xl lg:text-2xl font-bold'>Blog Kami</h1>
+        <div className='flex flex-col text-center gap-3 md:text-start lg:text-start'>
+          <h1 className='text-xl lg:text-2xl font-bold'>Our Article</h1>
           <p className='text-sm'>
             Bersama ideathings kembangkan dirimu dan bisnis mu!
           </p>
