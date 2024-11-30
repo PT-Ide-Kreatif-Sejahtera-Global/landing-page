@@ -1,24 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { MdMailOutline } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
-import { FiYoutube } from "react-icons/fi";
+import { FaFacebook } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
-const FOOTERCONTACT = [
-  {
-    icon: <MdMailOutline />,
-    title: "email@mail.com",
-  },
-  {
-    icon: <FaInstagram />,
-    title: "@ideathings.id",
-  },
-  {
-    icon: <FiYoutube />,
-    title: "youtube.com/ideathings",
-  },
-];
+
 
 const FOOTERSERVICE = [
   {
@@ -71,12 +58,12 @@ const Footer = () => {
         </div>
         <div className="gap-2 flex flex-col  justify-center items-start md:items-center">
           <h1 className="font-bold text-white">Contact Us</h1>
-          {FOOTERCONTACT.map((item, i) => (
-            <ul key={i} className="text-white flex items-center gap-3">
-              <li className="mt-1">{item.icon}</li>
-              <li>{item.title}</li>
+            <ul className="text-white flex items-center gap-3">
+              <li className="mt-1 hover:scale-110 duration-300"><a  href="https://facebook.com/ideathings" target="_blank"><FaFacebook /></a></li> 
+              <li className="mt-1 hover:scale-110 duration-300"><a  href="https://www.instagram.com/ideathings.id/" target="_blank"><FaInstagram /></a></li> 
+              <li className="mt-1 hover:scale-110 duration-300"><a  href="tiktok.com/@ideathingstudio" target="_blank"><FaTiktok /></a></li> 
             </ul>
-          ))}
+       
         </div>
       </div>
 
