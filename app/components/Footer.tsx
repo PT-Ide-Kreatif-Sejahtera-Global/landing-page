@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import { useRouter } from "next/router";
 
 
 
@@ -68,12 +67,26 @@ const Footer = () => {
         </div>
         <div className="gap-2 flex flex-col  justify-center items-start md:items-center">
           <h1 className="font-bold text-white">Contact Us</h1>
-            <ul className="text-white flex items-center gap-3">
-              <li className="mt-1 hover:scale-110 duration-300"><a  href="https://facebook.com/ideathings" target="_blank"><FaFacebook /></a></li> 
-              <li className="mt-1 hover:scale-110 duration-300"><a  href="https://www.instagram.com/ideathings.id/" target="_blank"><FaInstagram /></a></li> 
-              <li className="mt-1 hover:scale-110 duration-300"><a  href="tiktok.com/@ideathingstudio" target="_blank"><FaTiktok /></a></li> 
-            </ul>
-       
+          <ul className="text-white flex items-center gap-3">
+            <li className="mt-1 hover:scale-110 duration-300">
+              <a href="https://facebook.com/ideathings" target="_blank">
+                <FaFacebook />
+              </a>
+            </li>
+            <li className="mt-1 hover:scale-110 duration-300">
+              <a
+                href="https://www.instagram.com/ideathings.id/"
+                target="_blank"
+              >
+                <FaInstagram />
+              </a>
+            </li>
+            <li className="mt-1 hover:scale-110 duration-300">
+              <a href="tiktok.com/@ideathingstudio" target="_blank">
+                <FaTiktok />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 

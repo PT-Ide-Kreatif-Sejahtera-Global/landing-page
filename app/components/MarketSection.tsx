@@ -32,28 +32,28 @@ const IMGITEMS = [
   },
   {
     img: "/Marketplace_Assets/card-6.png",
-    title: "Dompet Pria Simpel dan Elegan",
-    subtitle: "Rp 64.500",
+    title: "Dompet Pria Berkualitas Asli Bahan Kulit Eksklusif DC 566",
+    subtitle: "Rp 35.000",
   },
   {
     img: "/Marketplace_Assets/card-7.png",
-    title: "Item 7",
-    subtitle: "Rp",
+    title: "Dompet Pria Simple dan Elegan",
+    subtitle: "Rp 64.500",
   },
   {
     img: "/Marketplace_Assets/card-8.png",
-    title: "Item 8",
-    subtitle: "Rp",
+    title: "Kemeja Printing Pria Mallevic MLV 639",
+    subtitle: "Rp 92.812",
   },
   {
     img: "/Marketplace_Assets/card-9.png",
-    title: "Item 9",
-    subtitle: "Rp",
+    title: "KEMEJA PRIA INFICLO INF 108",
+    subtitle: "Rp 60.000",
   },
   {
     img: "/Marketplace_Assets/card-10.png",
-    title: "Item 10",
-    subtitle: "Rp",
+    title: "Tas Sling Bag Pria Stylish dan Modern",
+    subtitle: "Rp 98.040",
   },
 ];
 
