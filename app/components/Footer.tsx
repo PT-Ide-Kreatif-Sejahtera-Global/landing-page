@@ -4,6 +4,9 @@ import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import { useRouter } from "next/router";
+
+
 
 const FOOTERSERVICE = [
   {
@@ -16,6 +19,11 @@ const FOOTERSERVICE = [
     title: "Digital Talent",
   },
 ];
+
+// const router = useRouter()
+// // const handleNavigation = () => {
+// //   // router.push('')
+// // }
 
 const Footer = () => {
   return (
@@ -35,10 +43,12 @@ const Footer = () => {
           <div className="text-white flex flex-col">
             <h1 className="font-bold">PT.Ide Kreatif Sejahtera Global</h1>
             <p className="text-sm">
-              Jl. Suryopranoto No.11 F, RT.008/008, Kel.Petojo Selatan,
-              Kec.Gambir, Jakarta Pusat, DKI Jakarta, 10160, Desa/Kelurahan
-              Petojo Selatan, Kec. Gambir, Kota Adm. Jakarta Pusat, Provinsi DKI
-              Jakarta, Kode Pos: 10160
+              PT. Ide Kreatif Sejahtera Global adalah perusahaan adalah sociopreneur yang berkomitmen untuk
+            menciptakan inklusi sosial dengan memberdayakan sumber daya manusia
+            melalui berbagai bidang usaha yang telah berbadan hukum sebagai PT (Perseoran Terbatas).
+            Saat ini, kami mengembangkan empat sektor utama: pendidikan,
+            e-commerce, jasa kreatif, dan teknologi informasi, dengan
+            menghadirkan brand unggulan
             </p>
           </div>
         </div>
