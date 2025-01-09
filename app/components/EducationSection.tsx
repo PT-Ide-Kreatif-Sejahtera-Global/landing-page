@@ -1,8 +1,5 @@
 import React from 'react'
 import { PiArrowUpRightBold } from "react-icons/pi";
-import Image from 'next/image';
-import Link from 'next/link';
-import { Content } from 'next/font/google';
 import { FaCheck } from "react-icons/fa";
 
 

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import { useRouter } from "next/router";
 
 
 

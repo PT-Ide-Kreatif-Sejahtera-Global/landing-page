@@ -61,7 +61,7 @@ const Navbar = () => {
             width={50}
             height={50}
             className="w-[50px] h-[50px] rounded-full"
-            src="/logoideathings.png"
+            src="/logo-new.png"
             alt="Logo"
           />
           <span className="flex flex-col ml-3">
