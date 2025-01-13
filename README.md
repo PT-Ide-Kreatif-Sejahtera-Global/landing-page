@@ -1,5 +1,8 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Berikut ini link drive berisi repo github terbaru, dimana bagian landing page / home page berisi framework Next js yg menghubungkan ke projek lainnya mulai dari marketplace edukasi dan blog. 
+Link: https://drive.google.com/file/d/1b3o446eQzky8GDZYoaAdggUOF3jC7xor/view?usp=sharing
+
 ## Getting Started
 
 First, run the development server:
