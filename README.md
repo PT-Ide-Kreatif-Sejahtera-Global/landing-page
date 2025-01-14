@@ -3,6 +3,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 Berikut ini link drive berisi repo github terbaru, dimana bagian landing page / home page berisi framework Next js yg menghubungkan ke projek lainnya mulai dari marketplace edukasi dan blog. 
 Link: https://drive.google.com/file/d/1b3o446eQzky8GDZYoaAdggUOF3jC7xor/view?usp=sharing
 
+Bagaimana cara mengembangkan projek ini? Kamu cukup mengikuti panduan ini:
+https://docs.google.com/document/d/1c0n90alHregg5RJUIxLrjza2Ujb3RjQhRNars6gqWQk/edit?usp=sharing
+
+
 ## Getting Started
 
 First, run the development server:
