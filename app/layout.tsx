@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -23,13 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${inter.variable} antialiased h-screen w-screen flex flex-col gap-y-4`}
       >
         <Navbar/>
         {children}
-        <Footer/>
       </body>
     </html>
   );

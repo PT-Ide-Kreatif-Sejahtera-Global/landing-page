@@ -48,27 +48,20 @@ const Navbar = () => {
     };
   }, [pathname]);
   return (
-    <nav
-      className={
-        header
-          ? "transition-all bg-white lg:shadow-md z-50 lg:fixed w-full top-0 start-0"
-          : "bg-transparent"
-      }
-    >
-      <div className="container max-w-screen-2xl mx-auto flex justify-between items-center h-[108px] px-4 md:px-20 py-8">
-        <a href="/" className="flex items-center">
+      <nav className="flex justify-between items-center px-8 py-4 bg-white/40 shadow-lg">
+        <Link href="/" className="flex items-center cursor-pointer">
           <img
             width={50}
             height={50}
-            className="w-[50px] h-[50px] rounded-full"
+            className="w-12 h-12 rounded-full"
             src="/logoideathings.png"
             alt="Logo"
           />
           <span className="flex flex-col ml-3">
             <span className="text-black text-2xl font-bold">iDeaThings</span>
           </span>
-        </a>
-        <div className="hidden lg:flex space-x-4">
+        </Link>
+        <div className="hidden md:flex space-x-4">
           {menuItems.map((item, index) => (
             <div key={index} className="relative group">
               <button
@@ -80,7 +73,7 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-        <div className="lg:hidden flex items-center">
+        <div className="md:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -101,14 +94,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-      </div>
-      {/* Sidebar */}
-      <div
-        className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-50`}
-      >
-        <div className="flex flex-col space-y-2 p-4">
+        <div className={`fixed flex flex-col py-8 gap-y-8 items-center z-50 top-0 h-screen w-64 bg-white/90 duration-300 ${ isOpen ? "left-0" : "-left-full"}`}>
           <Link href="/">
             <img
               src="/logoideathings.png"
@@ -131,15 +117,21 @@ const Navbar = () => {
             </div>
           ))}
         </div>
-      </div>
-      {/* Overlay */}
-      {isOpen && (
-        <div
-          className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
-          onClick={() => setIsOpen(false)}
-        ></div>
-      )}
-    </nav>
+      </nav>
+      // {/* Sidebar
+      // <div
+      //   className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
+      //     isOpen ? "translate-x-0" : "-translate-x-full"
+      //   } transition-transform duration-300 ease-in-out z-50`}
+      // >
+      // </div> */}
+      // {/* Overlay */}
+      // {/* {isOpen && (
+      //   <div
+      //     className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
+      //     onClick={() => setIsOpen(false)}
+      //   ></div>
+      // )} */}
   );
 };
 

@@ -8,7 +8,7 @@ const HeroSection = () => {
     router.push('https://ideathings.id//education'); 
   };
   return (
-    <div className="max-h-screen-hpkecil lg:h-full mt-10 xl:mt-0">
+    <div className="max-h-full md:h-full mt-10 xl:mt-0">
       <div className="relative z-0 self-stretch w-full">
         <div className="inset-x-0 bottom-0 pt-[525px] xl:pt-[340px]">
           <img src="/hero/wave.png" alt="wave-background" className="top-10" />
