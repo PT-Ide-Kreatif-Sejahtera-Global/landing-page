@@ -55,14 +55,28 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="gap-2 flex flex-col  justify-center items-start md:items-center">
+        <div className="gap-2 flex flex-col justify-center items-start">
           <h1 className="font-bold text-white">Contact Us</h1>
-            <ul className="text-white flex items-center gap-3">
-              <li className="mt-1 hover:scale-110 duration-300"><a  href="https://facebook.com/ideathings" target="_blank"><FaFacebook /></a></li> 
-              <li className="mt-1 hover:scale-110 duration-300"><a  href="https://www.instagram.com/ideathings.id/" target="_blank"><FaInstagram /></a></li> 
-              <li className="mt-1 hover:scale-110 duration-300"><a  href="tiktok.com/@ideathingstudio" target="_blank"><FaTiktok /></a></li> 
-            </ul>
-       
+          <ul className="text-white flex flex-col items-start"> {/* Tetap menggunakan flex-col untuk daftar */}
+            <li className="flex items-center hover:scale-110 duration-300"> {/* Menggunakan flex untuk item */}
+              <a href="https://facebook.com/ideathings" target="_blank" className="flex items-center">
+                <FaFacebook className="text-2xl mr-2" /> {/* Ukuran logo Facebook */}
+                @ideathings
+              </a>
+            </li>
+            <li className="my-2 flex items-center hover:scale-110 duration-300">
+              <a href="https://www.instagram.com/ideathings.id/" target="_blank" className="flex items-center">
+                <FaInstagram className="text-2xl mr-2" /> {/* Ukuran logo Instagram */}
+                @ideathings.id
+              </a>
+            </li>
+            <li className="flex items-center hover:scale-110 duration-300">
+              <a href="https://www.tiktok.com/@ideathingstudio" target="_blank" className="flex items-center">
+                <FaTiktok className="text-2xl mr-2" /> {/* Ukuran logo TikTok */}
+                @ideathingstudio
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
