@@ -48,7 +48,7 @@ const Navbar = () => {
     };
   }, [pathname]);
   return (
-      <nav className="flex justify-between items-center px-8 py-4 bg-white/40 shadow-lg">
+      <nav className="flex justify-between items-center px-8 py-4 z-[100] bg-white/40 shadow-xl">
         <Link href="/" className="flex items-center cursor-pointer">
           <img
             width={50}
