@@ -65,23 +65,23 @@ const EducationSection = () => {
 
                   <div className='border-2 border-black w-80 h-96  group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
                       <img className='relative group-hover:scale-105 duration-300 group-hover:blur-md'  src={item.img} alt="Logo"       />
-                      <div className='absolute top-0  text-white w-full '>
+                      <div className='absolute top-0 bg-white/60 text-slate-800 w-full '>
                           <div className='p-3 flex flex-col gap-2'>
                             <p className='font-bold text-xl'>{item.title}</p>
                             {/*<p className='text-sm'>{item.subtitle}</p>*/}
                             {/* <div className='border border-white'></div> */}
                           </div>
                       </div>
-                      <div className='flex flex-col  gap-6 absolute bottom-0 w-full bg- h-40'>
+                      <div className='flex flex-col  gap-6 absolute bottom-0 w-full h-40'>
                           <div className='p-3'>
-                              <div className='flex flex-col gap-3'>
-                                  <div className='flex gap-3'>
-                                      <FaCheck  className='text-white'/>
-                                      <p className='text-xs text-white'>{item.text}</p>
+                              <div className='flex flex-col px-4 bg-white/60 font-bold text-slate-800 gap-3'>
+                                  <div className='flex gap-3 '>
+                                      <FaCheck  className=''/>
+                                      <p className='text-xs '>{item.text}</p>
                                   </div>
                                   <div className='flex gap-3'>
-                                      <FaCheck  className='text-white'/>
-                                      <p className='text-xs text-white'>{item.text2}</p>
+                                      <FaCheck  className=''/>
+                                      <p className='text-xs '>{item.text2}</p>
                                   </div>
                               </div>
                             <p className='text-sm '></p>

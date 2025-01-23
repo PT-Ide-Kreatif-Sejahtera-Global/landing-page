@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <>
       <div 
-        className="grid grid-cols-1 h-full overflow-y-auto gap-10 relative max-w-full"
+        className="grid grid-cols-1 h-full overflow-y-auto gap-10 relative w-full"
         ref={pageRef}
       >
         <HeroSection />
