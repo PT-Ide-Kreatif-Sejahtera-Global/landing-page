@@ -33,7 +33,7 @@ const EducationSection = () => {
 
   return (
     <div className='px-4 md:px-40'>
-        <div className=' flex flex-col md:flex-col gap-5 lg:flex-row items-center justify-between '>
+        <div className='flex flex-col md:flex-col gap-5 lg:flex-row items-center justify-between '>
             <div className='flex flex-col text-center gap-3  lg:text-start'>
                 <h1 className='text-xl lg:text-2xl font-bold '>
                   Program Education
@@ -44,7 +44,7 @@ const EducationSection = () => {
             </div>
             <div>
                 <a href="http://">
-                  <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg duration-300'>
+                  <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg hover:border-none hover:bg-black hover:text-white duration-300'>
                     More
                   <PiArrowUpRightBold />
                   </button>
@@ -72,9 +72,9 @@ const EducationSection = () => {
                             {/* <div className='border border-white'></div> */}
                           </div>
                       </div>
-                      <div className='flex flex-col  gap-6 absolute bottom-0 w-full h-40'>
+                      <div className='flex flex-col gap-6 absolute bottom-0 w-full h-auto'>
                           <div className='p-3'>
-                              <div className='flex flex-col px-4 bg-white/60 font-bold text-slate-800 gap-3'>
+                              <div className='flex flex-col py-2 px-4 bg-white/80 rounded-lg font-bold text-slate-800 gap-3 mb-3'>
                                   <div className='flex gap-3 '>
                                       <FaCheck  className=''/>
                                       <p className='text-xs '>{item.text}</p>
@@ -86,7 +86,7 @@ const EducationSection = () => {
                               </div>
                             <p className='text-sm '></p>
 
-                            <a href="https://ideathings.id/education" className='group-hover:bg-white duration-300 border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
+                            <a href="https://ideathings.id/education" className='group-hover:bg-white duration-300 border border-black rounded-xl h-10 flex mt-auto justify-center text-center items-center w-full bg-lime-200 '>More</a>
                           </div>
                       </div>
                   </div>

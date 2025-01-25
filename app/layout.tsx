@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} antialiased h-screen w-screen flex flex-col gap-y-4`}
+        className={`${inter.variable} antialiased h-screen w-screen flex flex-col`}
       >
         <Navbar/>
         {children}
