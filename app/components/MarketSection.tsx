@@ -86,7 +86,7 @@ const MarketSection = () => {
           <p className="text-sm text-gray-300 mt-2">
             lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
-          <div className="flex gap-3 mt-4">
+          <div className="flex gap-3 mt-4 items-center justify-center">
             <Link href="https://ideathings.id/marketplace" passHref>
               <button className="bg-yellow-400 text-black font-bold px-6 py-2 rounded-md hover:bg-yellow-500 transition duration-300">
                 MORE
