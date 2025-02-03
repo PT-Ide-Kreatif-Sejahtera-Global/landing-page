@@ -8,19 +8,19 @@ const text = [
     title: 'Olimpiade Paris 2024: Wujud Semangat Inklusif',
     desc: 'Olimpiade Paris 2024 merupakan acara olahraga internasional yang sangat dinantikan, terutama karena inisiatifnya yang ramah disabilitas.',
     img: '/Blog_Assets/blog_1.jpeg',
-    url: ''
+    url: 'https://ideathings.id/blog/bagaimana-cara-mewujudkan-fasilitas-umum-yang-ramah-disabilitas/'
   },
   {
     title: 'iDeathings: Mempersiapkan Penyandang Disabilitas Siap Kerja',
     desc: 'PT. IDE KREATIF SEJAHTRA GLOBAL dengan brand terbaru iDeathings mendukung edukasi dan pemberdayaan penyandang disabilitas di Indonesia.',
     img: '/Blog_Assets/blog_2.jpeg',
-    url: ''
+    url: 'https://ideathings.id/blog/bagaimana-cara-mewujudkan-fasilitas-umum-yang-ramah-disabilitas/'
   },
   {
     title: 'Cara Mewujudkan Fasilitas Umum yang Ramah Disabilitas',
     desc: 'Fasilitas umum yang ramah disabilitas adalah salah satu indikator penting untuk menilai tingkat inklusivitas suatu wilayah.',
     img: '/Blog_Assets/blog_3.jpeg',
-    url: ''
+    url: 'https://ideathings.id/blog/bagaimana-cara-mewujudkan-fasilitas-umum-yang-ramah-disabilitas/'
   },
 ]
 
@@ -30,7 +30,7 @@ const ServiceSection = () => {
   const router = useRouter();
 
   const handleNavigation = () => {
-    router.push('/'); // Ganti '/target-page' dengan rute yang diinginkan
+    router.push('https://ideathings.id/blog/'); // Ganti '/target-page' dengan rute yang diinginkan
   };
 
   return (
@@ -53,8 +53,8 @@ const ServiceSection = () => {
         <div className="grid lg:flex justify-around">
           {text.map((item, i) => (
             <div key={i} className='' >
-              <Link href="/" passHref>
                 <div className='w-96 bg-transparent h-96  relative overflow-hidden lg:mt-0 mt-5 rounded-lg hover:scale-105 duration-300 group cursor-pointer object-cover'>
+                <Link href={item.url} passHref>
                   <div className="w-full z-30 h-44 rounded-lg absolute opacity-100 group-hover:opacity-80">
                     <Image
                       src={item.img}
@@ -69,16 +69,18 @@ const ServiceSection = () => {
 
                     </div>
                   </div>
+                </Link>
                   <div className='absolute mt-4 -z-10 top-0 w-full group-hover:bg-gradient-to-t bg-transparent from-gray-50 to-transparent px-3 translate-y-0 py-4 group-hover:translate-y-40 duration-300'>
+                  <Link href={item.url} passHref>
                     <p className=' text-black font-bold text-xl mb-2'>{item.title}</p>
                     <p className='text-sm text-black mb-2'>{item.desc}</p>
+                </Link>
                       <button onClick={handleNavigation} className="bg-lime-400 text-black w-full font-bold px-6 py-2 rounded-md hover:bg-[#9cdd2c] transition duration-300">
                       <span className="opacity-0 group-hover:opacity-100">MORE</span>
                       </button>
                     
                   </div>
                 </div>
-              </Link>
 
             </div>
 
