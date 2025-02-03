@@ -10,12 +10,15 @@ import { FaTiktok } from "react-icons/fa";
 const FOOTERSERVICE = [
   {
     title: "Education",
+    url: "https://ideathings.id/education",
   },
   {
     title: "Product",
+    url: "https://ideathings.id/marketplace",
   },
   {
     title: "Digital Talent",
+    url: "https://ideathings.id/blog",
   },
 ];
 
@@ -48,7 +51,7 @@ const Footer = () => {
           <ul className="flex flex-col gap-1 text-start">
             {FOOTERSERVICE.map((item, i) => (
               <li key={i}>
-                <a href="" className="cursor-pointer">
+                <a href={item.url} className="cursor-pointer">
                   {item.title}
                 </a>
               </li>
