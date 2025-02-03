@@ -48,6 +48,8 @@ const Navbar = () => {
     };
   }, [pathname]);
   return (
+    <>
+      <div className={`fixed top-0 left-0 h-screen w-screen bg-black/40 z-10 ${ isOpen ? "block" : "hidden" }`}></div>
       <nav className="flex justify-between items-center px-8 py-4 z-[100] bg-white/40 shadow-xl">
         <Link href="/" className="flex items-center cursor-pointer">
           <img
@@ -118,6 +120,7 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
+    </>
   );
 };
 
