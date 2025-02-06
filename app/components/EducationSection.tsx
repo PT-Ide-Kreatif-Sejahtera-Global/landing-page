@@ -33,7 +33,7 @@ const EducationSection = () => {
 
   return (
     <div className='px-4 md:px-40'>
-        <div className=' flex flex-col md:flex-col gap-5 lg:flex-row items-center justify-between '>
+        <div className='flex flex-col md:flex-col gap-5 lg:flex-row items-center justify-between '>
             <div className='flex flex-col text-center gap-3  lg:text-start'>
                 <h1 className='text-xl lg:text-2xl font-bold '>
                   Program Education
@@ -44,7 +44,7 @@ const EducationSection = () => {
             </div>
             <div>
                 <a href="http://">
-                  <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg duration-300'>
+                  <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg hover:border-none hover:bg-black hover:text-white duration-300'>
                     More
                   <PiArrowUpRightBold />
                   </button>
@@ -65,28 +65,28 @@ const EducationSection = () => {
 
                   <div className='border-2 border-black w-80 h-96  group hover:opacity-100 duration-300 relative overflow-hidden  object-cover '>
                       <img className='relative group-hover:scale-105 duration-300 group-hover:blur-md'  src={item.img} alt="Logo"       />
-                      <div className='absolute top-0  text-white w-full '>
+                      <div className='absolute top-0 bg-white/60 text-slate-800 w-full '>
                           <div className='p-3 flex flex-col gap-2'>
                             <p className='font-bold text-xl'>{item.title}</p>
                             {/*<p className='text-sm'>{item.subtitle}</p>*/}
                             {/* <div className='border border-white'></div> */}
                           </div>
                       </div>
-                      <div className='flex flex-col  gap-6 absolute bottom-0 w-full bg- h-40'>
+                      <div className='flex flex-col gap-6 absolute bottom-0 w-full h-auto'>
                           <div className='p-3'>
-                              <div className='flex flex-col gap-3'>
-                                  <div className='flex gap-3'>
-                                      <FaCheck  className='text-white'/>
-                                      <p className='text-xs text-white'>{item.text}</p>
+                              <div className='flex flex-col py-2 px-4 bg-white/80 rounded-lg font-bold text-slate-800 gap-3 mb-3'>
+                                  <div className='flex gap-3 '>
+                                      <FaCheck  className=''/>
+                                      <p className='text-xs '>{item.text}</p>
                                   </div>
                                   <div className='flex gap-3'>
-                                      <FaCheck  className='text-white'/>
-                                      <p className='text-xs text-white'>{item.text2}</p>
+                                      <FaCheck  className=''/>
+                                      <p className='text-xs '>{item.text2}</p>
                                   </div>
                               </div>
                             <p className='text-sm '></p>
 
-                            <a href="https://ideathings.id/education" className='group-hover:bg-white duration-300 border border-black rounded-xl mt-3 h-10 flex justify-center text-center items-center w-full bg-lime-200 '>More</a>
+                            <a href="https://ideathings.id/education" className='group-hover:bg-white duration-300 border border-black rounded-xl h-10 flex mt-auto justify-center text-center items-center w-full bg-lime-200 '>More</a>
                           </div>
                       </div>
                   </div>

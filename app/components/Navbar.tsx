@@ -48,7 +48,9 @@ const Navbar = () => {
     };
   }, [pathname]);
   return (
-      <nav className="flex justify-between items-center px-8 py-4 bg-white/40 shadow-lg">
+    <>
+      <div className={`fixed top-0 left-0 h-screen w-screen bg-black/40 z-10 ${ isOpen ? "block" : "hidden" }`}></div>
+      <nav className="flex justify-between items-center px-8 py-4 z-[100] bg-white shadow-xl">
         <Link href="/" className="flex items-center cursor-pointer">
           <img
             width={50}
@@ -101,16 +103,16 @@ const Navbar = () => {
               alt="logo"
               width={60}
               height={60}
-              className="mb-4 rounded-full"
+              className="mb-2 rounded-full"
             />
           </Link>
           {menuItems.map((item, index) => (
-            <div key={index} className="py-2">
+            <div key={index} className="gap-y-3 flex flex-col w-full items-center">
               <button
                 onClick={() => {
                   handleMenuClick(item.href);
                 }}
-                className="block text-left w-full text-[#2e2751] text-lg font-medium"
+                className="text-center text-white bg-lime-600 w-fit px-4 text-lg font-bold rounded-full hover:bg-lime-400 duration-300"
               >
                 {item.name}
               </button>
@@ -118,20 +120,7 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
-      // {/* Sidebar
-      // <div
-      //   className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform ${
-      //     isOpen ? "translate-x-0" : "-translate-x-full"
-      //   } transition-transform duration-300 ease-in-out z-50`}
-      // >
-      // </div> */}
-      // {/* Overlay */}
-      // {/* {isOpen && (
-      //   <div
-      //     className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
-      //     onClick={() => setIsOpen(false)}
-      //   ></div>
-      // )} */}
+    </>
   );
 };
 

@@ -8,7 +8,7 @@ const About = () => {
           What is iDeaThings ?
         </div>
         <div className="basis-1/2 p-12 flex items-center bg-slate-50">
-          <div className="text-[18px] text-justify">
+          <div className="text-sm md:text-base text-justify">
             <span className="font-bold">iDeaThings</span>  adalah sociopreneur yang berkomitmen untuk
             menciptakan inklusi sosial dengan memberdayakan sumber daya manusia
             melalui berbagai bidang usaha yang telah berbadan hukum sebagai PT (Perseoran Terbatas).

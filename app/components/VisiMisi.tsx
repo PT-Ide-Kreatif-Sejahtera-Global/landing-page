@@ -3,7 +3,7 @@ import React from "react";
 const VisiMisi = () => {
   return (
     <div className="container max-w-screen-2xl mx-auto xl:px-20 flex flex-col xl:flex-row ">
-      <div className="basis-1/2 flex flex-col text-[18px] bg-slate-50 p-12">
+      <div className="text-sm md:text-base basis-1/2 flex flex-col bg-slate-50 p-12">
         <div>
           <span className="font-bold">VISI</span> <br />
           <hr />
