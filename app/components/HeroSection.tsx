@@ -18,8 +18,8 @@ const HeroSection = () => {
             <div className="text-5xl text-center xl:text-start xl:text-6xl font-bold">
               Grow your unique talent with us!
             </div>
-            <div className="text-center xl:text-start py-2 px-4 bg-lime-400/50 rounded-lg">Improve your skill to build your personal branding.</div>
-            <button onClick={handleNavigation} className="py-4 w-full bg-gradient-to-r from-lime-400 to-lime-200 text-xl md:text-2xl font-bold rounded-xl px-8 hover:py-8 hover:px-10 duration-300">
+            <div className="text-center xl:text-start">Improve your skill to build your personal branding.</div>
+            <button onClick={handleNavigation} className="py-[10px] bg-lime-400 hover:bg-[#9cdd2c] text-[20px] font-bold rounded-xl w-[150px]">
               Join Now
             </button>
           </div>

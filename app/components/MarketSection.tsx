@@ -9,51 +9,61 @@ const IMGITEMS = [
     img: "/Marketplace_Assets/card-1.png",
     title: "Tas Sling Bag Pria INFCL TL 510 IFS",
     subtitle: "Rp 49.768",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-2.png",
     title: "Celana Blue Jeans Wanita Casual dan Elegan",
     subtitle: "Rp 216.000",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-3.png",
     title: "Jacket Wanita KSD KZR 515",
     subtitle: "Rp 170.000",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-4.png",
     title: "Kemeja Casual Pria KKC KZR 116",
     subtitle: "Rp 117.600",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-5.png",
     title: "knficlo Wanita Pakaian Atasan INF 637",
     subtitle: "Rp 105.000",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-6.png",
-    title: "Dompet Pria Simpel dan Elegan",
-    subtitle: "Rp 64.500",
+    title: "Item 6",
+    subtitle: "Rp",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-7.png",
-    title: "Item 7",
-    subtitle: "Rp",
+    title: "Dompet Pria Simpel dan Elegan",
+    subtitle: "Rp 64.500",
+    url: "https://ideathings.id/marketplace/detail/32",
   },
   {
     img: "/Marketplace_Assets/card-8.png",
     title: "Item 8",
     subtitle: "Rp",
+    url: "",
   },
   {
     img: "/Marketplace_Assets/card-9.png",
-    title: "Item 9",
-    subtitle: "Rp",
+    title: "Kemeja Pria Inficlo INF 108",
+    subtitle: "Rp 60.000",
+    url: "https://ideathings.id/marketplace/detail/2",
   },
   {
     img: "/Marketplace_Assets/card-10.png",
     title: "Item 10",
     subtitle: "Rp",
+    url: "",
   },
 ];
 
@@ -92,7 +102,7 @@ const MarketSection = () => {
                 MORE
               </button>
             </Link>
-            <Link href="https://ideathings.id/marketplace" passHref>
+            <Link href={IMGITEMS[currentIndex].url} passHref>
               <button className="flex items-center gap-2 border-2 border-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300">
                 GET IN TOUCH
                 <PiArrowUpRightBold className="text-xl" />
