@@ -127,7 +127,7 @@ const MarketSection = () => {
               />
 
               {/* Teks */}
-              <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent px-3 py-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 w-full bg-gradient-to-t from-black to-transparent px-3 py-4 opacity-100 transition-opacity duration-300">
                 <p className="text-white font-bold text-lg">
                   {IMGITEMS[currentIndex].title}
                 </p>
