@@ -7,19 +7,24 @@ import MarketSection from "./components/MarketSection";
 import ServiceSection from "./components/BlogSection";
 import VisiMisi from "./components/VisiMisi";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
+  const [shadow, setShadow] = useState(false);
   const pageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      if (pageRef.current?.scrollTop! > 0) setShadow(true)
       if (pageRef.current?.scrollTop! > 300) {
         setShowButton(true);
       } else {
         setShowButton(false);
+        setShadow(false);
       }
     };
+    console.log('setshadow', shadow);
 
     const container = pageRef.current;
     if (container) {
@@ -31,7 +36,7 @@ export default function Home() {
         container.removeEventListener("scroll", handleScroll);
       }
     };
-  }, []);
+  }, [shadow]);
 
   const scrollToTop = () => {
     if (pageRef.current) {
@@ -41,6 +46,7 @@ export default function Home() {
 
   return (
     <>
+    <Navbar shadow={shadow} />
       <div 
         className="grid grid-cols-1 h-full overflow-y-auto gap-10 relative w-full"
         ref={pageRef}
