@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const Navbar = () => {
+export default function Navbar({ shadow }: { shadow: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <>
       <div className={`fixed top-0 left-0 h-screen w-screen bg-black/40 z-10 ${ isOpen ? "block" : "hidden" }`}></div>
-      <nav className="flex justify-between items-center px-8 py-4 z-[100] bg-white shadow-xl">
+      <nav className={`flex justify-between items-center px-8 py-4 z-[100] bg-white ${shadow ? "shadow-xl" : "shadow-none"}`}>
         <Link href="/" className="flex items-center cursor-pointer">
           <img
             width={50}
@@ -123,5 +123,3 @@ const Navbar = () => {
     </>
   );
 };
-
-export default Navbar;
