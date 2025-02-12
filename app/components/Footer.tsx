@@ -32,7 +32,7 @@ const Footer = () => {
               width={50}
               height={50}
               className="w-[50px] h-[50px] rounded-full"
-              src="/logoideathings.png"
+              src="/logo-new.png"
               alt="Logo"
             />
             <h1 className="font-bold">IDeaThings</h1>
