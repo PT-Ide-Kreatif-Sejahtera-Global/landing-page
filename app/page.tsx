@@ -8,6 +8,8 @@ import ServiceSection from "./components/BlogSection";
 import VisiMisi from "./components/VisiMisi";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -48,7 +50,7 @@ export default function Home() {
     <>
     <Navbar shadow={shadow} />
       <div 
-        className="grid grid-cols-1 h-full overflow-y-auto gap-10 relative w-full"
+        className="grid grid-cols-1 h-full overflow-y-auto gap-4 relative w-full"
         ref={pageRef}
       >
         <HeroSection />
@@ -57,7 +59,30 @@ export default function Home() {
         <EducationSection />
         <MarketSection />
         <ServiceSection />
+        {/* download app icons */}
+        <div className="w-full flex flex-col gap-y-4 items-center py-6 bg-black">
+          <h1 className="text-xl md:text-3xl text-white font-bold">Get Our Apps</h1>
+          <div className="flex justify-center items-center gap-x-6">
+            <Link href="#" className="w-full">
+              <Image 
+                src="playstore.png"
+                width={60}
+                height={60}
+                alt="playstore"
+              />
+            </Link>
+            <Link href="#" className="w-full">
+              <Image 
+                src="app-store.png"
+                width={60}
+                height={60}
+                alt="app-store"
+              />
+            </Link>
+          </div>
+        </div>
         <Footer />
+        {/* <a href="https://www.flaticon.com/free-icons/playstore" title="playstore icons">Playstore icons created by Freepik - Flaticon</a> */}
         {/* Back to Top Button */}
         {showButton && (
           <button
