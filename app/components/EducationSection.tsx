@@ -43,7 +43,7 @@ const EducationSection = () => {
                 </p>
             </div>
             <div>
-                <a href="http://">
+                <a href="https://ideathings.id/education/">
                   <button className=' flex gap-3 border-black border-2 border-solid px-4 py-1 rounded-md items-center font-bold hover:text-lg hover:border-none hover:bg-black hover:text-white duration-300'>
                     More
                   <PiArrowUpRightBold />
