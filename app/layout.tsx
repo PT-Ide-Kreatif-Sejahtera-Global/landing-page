@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Inter } from 'next/font/google';
 
@@ -26,7 +25,6 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased h-screen w-screen flex flex-col`}
       >
-        <Navbar/>
         {children}
       </body>
     </html>

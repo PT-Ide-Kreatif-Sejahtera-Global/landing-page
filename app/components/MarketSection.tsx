@@ -86,7 +86,7 @@ const MarketSection = () => {
     <div className="mt-14 px-4 lg:px-28 py-10 bg-[#10352c] text-white">
       <div className="flex flex-col md:flex-row gap-5 items-center justify-between">
         {/* Text and Buttons Section */}
-        <div className="flex flex-col text-center gap-3 md:text-start">
+        <div className="flex flex-col text-center h-auto justify-between md:text-start">
           <p className="text-lg lg:text-xl font-medium">
             Take a Look of Our Latest Product
           </p>
