@@ -56,7 +56,7 @@ export default function Navbar({ shadow }: { shadow: boolean }) {
             width={50}
             height={50}
             className="w-12 h-12 rounded-full"
-            src="/logoideathings.png"
+            src="/logo-new.png"
             alt="Logo"
           />
           <span className="flex flex-col ml-3">
