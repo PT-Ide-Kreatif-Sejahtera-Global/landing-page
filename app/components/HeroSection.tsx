@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Link from "next/link";
 
 const HeroSection = () => {
   const router = useRouter();
@@ -30,6 +31,18 @@ const HeroSection = () => {
             <button onClick={handleNavigation} className="py-4 w-full bg-gradient-to-r from-lime-400 to-lime-200 text-xl md:text-2xl font-bold rounded-xl px-8 hover:py-8 hover:px-10 duration-300">
               Join Now
             </button>
+            <Link href="#" className="text-center xl:text-start py-2 px-4 bg-lime-400/50 rounded-lg font-bold flex justify-center">
+            <div className="flex flex-col justify-center">
+              <p>Jasa Digital Agency</p>
+              <p>Agency</p>
+            </div>
+              <Image 
+                src="whatsapp.png"
+                width={60}
+                height={60}
+                alt="playstore"
+              />
+            </Link>
           </div>
           <div className="absolute right-0 top-0 h-full w-auto z-10"> {/* Gambar di belakang teks */}
             <img src="/hero/hero1.png" alt="band" className="h-full w-auto object-cover" />
