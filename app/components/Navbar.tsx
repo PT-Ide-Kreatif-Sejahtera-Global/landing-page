@@ -96,23 +96,23 @@ export default function Navbar({ shadow }: { shadow: boolean }) {
             </svg>
           </button>
         </div>
-        <div className={`fixed flex flex-col py-8 gap-y-8 items-center z-50 top-0 h-screen w-64 bg-white/90 duration-300 ${ isOpen ? "left-0" : "-left-full"}`}>
+        <div className={`fixed flex flex-col py-8 gap-y-8 items-center z-50 top-0 h-screen w-64 bg-slate-300/95 duration-300 ${ isOpen ? "left-0" : "-left-full"}`}>
           <Link href="/">
             <img
-              src="/logoideathings.png"
+              src="/logo-new.png"
               alt="logo"
               width={60}
               height={60}
-              className="mb-2 rounded-full"
+              className="mb-2 rounded-full shadow-lg"
             />
           </Link>
           {menuItems.map((item, index) => (
-            <div key={index} className="gap-y-3 flex flex-col w-full items-center">
+            <div key={index} className="gap-y-3 flex flex-col w-full items-center px-6">
               <button
                 onClick={() => {
                   handleMenuClick(item.href);
                 }}
-                className="text-center text-white bg-lime-600 w-fit px-4 text-lg font-bold rounded-full hover:bg-lime-400 duration-300"
+                className="text-center py-2 text-white bg-lime-600 w-full text-lg font-bold rounded-lg hover:bg-lime-400 duration-300"
               >
                 {item.name}
               </button>
