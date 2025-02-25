@@ -33,14 +33,14 @@ const HeroSection = () => {
             </button>
             <Link href="#" className="text-center xl:text-start py-2 px-4 bg-lime-400/50 rounded-lg font-bold flex justify-center">
             <div className="flex flex-col justify-center">
-              <p>Jasa Digital Agency</p>
+              <p>Jasa Digital</p>
               <p>Agency</p>
             </div>
               <Image 
                 src="whatsapp.png"
                 width={60}
                 height={60}
-                alt="playstore"
+                alt="whatsapp"
               />
             </Link>
           </div>
