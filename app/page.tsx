@@ -5,6 +5,7 @@ import EducationSection from "./components/EducationSection";
 import HeroSection from "./components/HeroSection";
 import MarketSection from "./components/MarketSection";
 import ServiceSection from "./components/BlogSection";
+import Achievements from "./components/Achievements";
 import VisiMisi from "./components/VisiMisi";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -58,6 +59,7 @@ export default function Home() {
         <EducationSection />
         <MarketSection />
         <ServiceSection />
+        <Achievements />
         {/* download app icons */}
         <div className="w-full flex flex-col gap-y-6 items-center py-6 bg-black">
           <h1 className="text-2xl md:text-3xl text-white font-bold">Get Our Apps</h1>
