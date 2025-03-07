@@ -20,6 +20,9 @@ const Achievements = () => {
     <section className="py-10 bg-gray-100">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-6">Prestasi</h2>
+        <p className="text-center text-lg text-gray-700 mb-4">
+          Berikut Pencapaian kami dari awal terbentuk hingga saat ini.
+        </p>
         <div className="flex flex-wrap justify-center gap-6">
           {achievementsData.map((achievement, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden max-w-xs w-full">
