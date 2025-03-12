@@ -6,12 +6,12 @@ const achievementsData = [
   {
     title: "Finalis 5 Besar Wirausaha Muda Pemula 2024",
     description: "Kategori Sociopreneur se-Nasional dari KEMENPORA RI",
-    imageUrl: "/images/finalis.jpg", // Ganti dengan path gambar yang sesuai
+    imageUrl: "/Achievements_Assets/Finalis_5_Besar_Wirausaha_Muda_Pemula_2024.jpeg", // Ganti dengan path gambar yang sesuai
   },
   {
     title: "Lolos 225 Besar Lomba Wismilak Diplomat Success Challenge Season 15",
     description: "Tahun 2024",
-    imageUrl: "/images/wismilak.jpg", // Ganti dengan path gambar yang sesuai
+    imageUrl: "/Achievements_Assets/Lolos_450_Besar_Lomba_Wismilak.png", // Ganti dengan path gambar yang sesuai
   },
 ];
 
