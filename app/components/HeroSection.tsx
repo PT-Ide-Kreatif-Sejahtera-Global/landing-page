@@ -31,7 +31,7 @@ const HeroSection = () => {
             <button onClick={handleNavigation} className="py-4 w-full bg-gradient-to-r from-lime-400 to-lime-200 text-xl md:text-2xl font-bold rounded-xl px-8 hover:py-8 hover:px-10 duration-300">
               Join Now
             </button>
-            <Link href="#" className="text-center xl:text-start py-2 px-4 bg-lime-400/50 rounded-lg font-bold flex justify-center">
+            <Link href="https://wa.me/085161609396/" className="text-center xl:text-start py-2 px-4 bg-lime-400/50 rounded-lg font-bold flex justify-center">
             <div className="flex flex-col justify-center">
               <p>Jasa Digital</p>
               <p>Agency</p>
