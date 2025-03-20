@@ -34,7 +34,7 @@ const ServiceSection = () => {
   return (
     <div className='px-4 lg:px-20 mt-20 mb-20 items-center'>
       <div className='flex flex-col text-center gap-5 m-auto w-full'>
-        <h1 className='text-xl lg:text-2xl font-bold'>
+        <h1 className='text-2xl lg:text-3xl font-bold'>
           Blog Kami
         </h1>
         <p className='text-sm'>
