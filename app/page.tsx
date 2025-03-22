@@ -5,6 +5,7 @@ import EducationSection from "./components/EducationSection";
 import HeroSection from "./components/HeroSection";
 import MarketSection from "./components/MarketSection";
 import ServiceSection from "./components/BlogSection";
+import DigitalAgencySection from "./components/DigitalAgencySection";
 import Achievements from "./components/Achievements";
 import DownloadApp from "./components/DownloadApp";
 import VisiMisi from "./components/VisiMisi";
@@ -58,6 +59,7 @@ export default function Home() {
         <EducationSection />
         <MarketSection />
         <ServiceSection />
+        <DigitalAgencySection />
         <Achievements />
         <DownloadApp />
         <Footer />
