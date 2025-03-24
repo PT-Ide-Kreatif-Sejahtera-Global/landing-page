@@ -112,11 +112,11 @@ const MarketSection = () => {
         </div>
 
         {/* Carousel Section */}
-        <div className="relative w-80 h-80">
+        <div className="relative w-full md:w-80 h-80">
           {/* Previous Button */}
           <button
             onClick={handlePrev}
-            className="absolute top-1/2 -left-8 transform -translate-y-1/2 bg-yellow-400 text-black p-2 rounded-full hover:bg-yellow-500 transition"
+            className="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-yellow-400 text-black p-2 rounded-full hover:bg-yellow-500 transition md:-left-8"
           >
             &#8249;
           </button>
@@ -134,6 +134,7 @@ const MarketSection = () => {
                 alt={IMGITEMS[currentIndex].title}
                 className="rounded-xl opacity-90 group-hover:opacity-100 transform group-hover:scale-105 duration-300"
                 fill
+                sizes="(max-width: 640px) 100vw, (min-width: 641px) 80vw" // Menambahkan ukuran responsif
               />
 
               {/* Teks */}
@@ -151,7 +152,7 @@ const MarketSection = () => {
           {/* Next Button */}
           <button
             onClick={handleNext}
-            className="absolute top-1/2 -right-8 transform -translate-y-1/2 bg-yellow-400 text-black p-2 rounded-full hover:bg-yellow-500 transition"
+            className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-yellow-400 text-black p-2 rounded-full hover:bg-yellow-500 transition md:-right-8"
           >
             &#8250;
           </button>
