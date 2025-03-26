@@ -6,6 +6,32 @@ Link: https://drive.google.com/file/d/1b3o446eQzky8GDZYoaAdggUOF3jC7xor/view?usp
 Bagaimana cara mengembangkan projek ini? Kamu cukup mengikuti panduan ini:
 https://docs.google.com/document/d/1c0n90alHregg5RJUIxLrjza2Ujb3RjQhRNars6gqWQk/edit?usp=sharing
 
+## Struktur Halaman Landing Page
+
+Aplikasi landing page ini memiliki beberapa bagian yang meliputi:
+
+- **Hero**: Bagian ini menampilkan informasi utama dan menarik perhatian pengunjung dengan gambar latar belakang dan teks yang mencolok.
+  
+- **About**: Menyediakan informasi tentang perusahaan.
+
+- **Achievement**: Menampilkan pencapaian atau prestasi yang telah diraih oleh perusahaan.
+
+- **Blog**: Menyediakan tautan ke artikel atau konten terbaru yang relevan dengan audiens.
+
+- **Digital Agensi**: Menjelaskan layanan yang ditawarkan oleh agensi digital, termasuk informasi kontak.
+
+- **Download Aplikasi**: Menyediakan tautan untuk mengunduh aplikasi untuk android atau ios.
+
+- **Edukasi**: Menyediakan informasi atau sumber daya pendidikan yang relevan dengan audiens.
+
+- **Footer**: Menyediakan informasi tambahan seperti tautan ke kebijakan privasi, syarat dan ketentuan, dan informasi kontak.
+
+- **Market**: Menampilkan produk atau layanan yang tersedia untuk dibeli.
+
+- **Navbar**: Menu navigasi yang memudahkan pengunjung untuk menjelajahi berbagai bagian di situs.
+
+- **Visi-Misi**: Menyampaikan tujuan dan nilai-nilai perusahaan atau proyek.
+
 
 ## Getting Started
 
