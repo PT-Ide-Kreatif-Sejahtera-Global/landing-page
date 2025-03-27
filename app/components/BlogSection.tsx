@@ -8,13 +8,13 @@ const text = [
     title: 'Olimpiade Paris 2024: Wujud Semangat Inklusif',
     desc: 'Olimpiade Paris 2024 merupakan acara olahraga internasional yang sangat dinantikan, terutama karena inisiatifnya yang ramah disabilitas.',
     img: '/Blog_Assets/blog_1.jpeg',
-    url: 'https://ideathings.id/blog/bagaimana-cara-mewujudkan-fasilitas-umum-yang-ramah-disabilitas/'
+    url: 'https://ideathings.id/blog/'
   },
   {
     title: 'iDeathings: Mempersiapkan Penyandang Disabilitas Siap Kerja',
     desc: 'PT. IDE KREATIF SEJAHTRA GLOBAL dengan brand terbaru iDeathings mendukung edukasi dan pemberdayaan penyandang disabilitas di Indonesia.',
     img: '/Blog_Assets/blog_2.jpeg',
-    url: 'https://ideathings.id/blog/bagaimana-cara-mewujudkan-fasilitas-umum-yang-ramah-disabilitas/'
+    url: 'https://ideathings.id/blog/'
   },
   {
     title: 'Cara Mewujudkan Fasilitas Umum yang Ramah Disabilitas',
